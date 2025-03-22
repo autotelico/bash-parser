@@ -17,12 +17,3 @@ char* parseBashCommands(char text[], int textSize) {
 
     return bashCommands;
 }
-
-int main(void) {
-    char bashCommand[] = "ls programming/";
-    char* parsedCmd = parseBashCommands(bashCommand, sizeof(bashCommand));
-    printf("%s", parsedCmd);
-    free(parsedCmd);
-
-    return 0;
-}
